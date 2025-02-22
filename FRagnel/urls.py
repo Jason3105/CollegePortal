@@ -33,6 +33,7 @@ urlpatterns = [
     path('homework-assign/', homework_assign, name='homework_assign'),
     path('teacher-connect/', teacher_connect, name='teacher_connect'),
     path('message/', message, name='message'),
+    path('login/', login, name='login'),
 
 
 ]
