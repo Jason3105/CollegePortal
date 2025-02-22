@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{% block title %}College Portal{% endblock %}</title>
     {% load static %}
-    <link rel="icon" type="png" href="{% static 'manage/logo.svg' %}">
+    <link rel="icon" type="png" href="{% static 'manage/logo.svg' %}" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,9 +19,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css"
     />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
 
     <style>
       /* Custom Styles */
@@ -54,46 +59,43 @@
         color: white;
         padding: 3rem 2rem;
         margin-top: 4rem;
-    }
+      }
 
-    .footer-content {
+      .footer-content {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
-    }
+      }
 
-    .footer-section h3 {
+      .footer-section h3 {
         margin-bottom: 1rem;
         color: #fff;
-    }
+      }
 
-    .footer-section p,
-    .footer-section a {
+      .footer-section p,
+      .footer-section a {
         color: #ccc;
         text-decoration: none;
         line-height: 1.6;
-    }
+      }
 
-    .footer-section ul {
+      .footer-section ul {
         list-style: none;
-    }
+      }
 
-    .footer-section ul li {
+      .footer-section ul li {
         margin-bottom: 0.5rem;
-    }
+      }
 
-    .footer-bottom {
+      .footer-bottom {
         text-align: center;
         margin-top: 2rem;
         padding-top: 2rem;
         border-top: 1px solid #444;
-        color:#888;
-    }
-
-
-
+        color: #888;
+      }
     </style>
   </head>
   <body>
@@ -118,10 +120,10 @@
             <li class="nav-item">
               <a class="nav-link" href="/dashboard/">Dashboard</a>
             </li>
+            
+
             <li class="nav-item">
-                <a class="nav-link" href="/homework/"
-                  >Homework</a
-                >
+              <a class="nav-link" href="/homework/">Homework</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/attendance/">Attendance</a>
@@ -159,10 +161,10 @@
                   >
                 </li>
                 <li>
-                    <a class="dropdown-item" href="/homework-assign/"
-                      >Assign Homework</a
-                    >
-                  </li>
+                  <a class="dropdown-item" href="/homework-assign/"
+                    >Assign Homework</a
+                  >
+                </li>
               </ul>
             </li>
             {% endif %}
