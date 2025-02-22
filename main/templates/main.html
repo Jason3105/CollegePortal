@@ -292,17 +292,7 @@
 
 <main class="min-h-screen bg-white py-8">
   <div class="container mx-auto px-4">
-    {% if not user.is_authenticated %}
-    <!-- Authentication Buttons -->
-    <div class="flex justify-end space-x-4 mb-8">
-      <button class="but">
-        <a href="{% url 'login' %}"><span>Login</span></a>
-      </button>
-      <button class="but">
-        <a href="{% url 'register' %}"><span>Register</span></a>
-      </button>
-    </div>
-    {% endif %}
+    
 
     <section class="hero-section">
       <h1>Welcome to College Portal</h1>
