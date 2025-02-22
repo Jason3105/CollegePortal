@@ -11,6 +11,8 @@ from django.db.models import Count
 from .forms import MarksUploadForm
 from django.http import JsonResponse
 from datetime import datetime
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render
 # Create your views here.
 
 
@@ -69,7 +71,7 @@ def logout_page(request):
     logout(request)
     return redirect('/login/')
 
-@login_required
+@login_required(login_url='/login/')
 def homework_page(request):
     return render(request, 'homework.html')
 
@@ -78,7 +80,7 @@ def homework_page(request):
 def homework_assign(request):
     return render(request, 'homework_assign.html')
 
-@login_required
+@login_required(login_url='/login/')
 def dashboard(request):
     context = {
         'semester_progress': 65,
@@ -136,7 +138,7 @@ def dashboard(request):
     }
     return render(request, 'index.html', context)
         
-@login_required
+@login_required(login_url='/login/')
 def attendance_page(request):
     total_classes = 90
     classes_attended = 85
@@ -158,7 +160,7 @@ def attendance_page(request):
     }
     return render(request, 'attendance.html', context)
 
-@login_required
+@login_required(login_url='/login/')
 def marks_page(request):
     return render(request, 'marks.html')
 
@@ -285,7 +287,7 @@ def manage_attendance(request):
     }
     return render(request, 'updateattendance.html', context)
 
-@login_required
+@login_required(login_url='/login/')
 def teacher_connect(request):
     return render(request, 'teacher_connect.html')
 
