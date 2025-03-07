@@ -60,3 +60,10 @@ Installation Steps
 
 ## 📸 Screenshots
 
+![Home_Page](Images/1.jpg)  
+![Dashboard](Images/2.jpg)  
+![Attendance](Images/3.jpg)  
+![Teacher_connect](Images/4.jpg)  
+![Course](Images/5.jpg)  
+![Teacher_Portal](Images/6.jpg)  
+![Django_Admin_Page](Images/7.jpg)  
