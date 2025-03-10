@@ -4,6 +4,9 @@ A smart and efficient classroom management platform designed to enhance the lear
 ## 🚀 Live Demo
 [Click here to try CollegePortal](https://collegeportal-yake.onrender.com/)
 
+## YouTube Demo 🎥
+[![Watch the Demo](https://img.youtube.com/vi/imFYoj5F43I/maxresdefault.jpg)](https://www.youtube.com/watch?v=imFYoj5F43I)
+
 ## Features 🌟
 🔐 User Authentication: Separate logins for students and teachers/admins.  
 🏠 Dashboard: Overview of academic progress, college updates, and notifications.  
